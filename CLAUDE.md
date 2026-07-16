@@ -36,6 +36,16 @@ scripts/generate_preview.py  generátor index.html
     svolení se vztahuje na běžný, striktně dle procesu níže provedený zápis. Pokud narazíš na
     něco mimo proces (neobvyklý vstup, kolize slugu, chybějící fotka, nejasné jméno/tým), i tak
     se zeptej – automatizace platí pro provedení kroků, ne pro domýšlení nejasného zadání.
+11. **Nasazení na Pages musí být spolehlivé:** push přes lokální git proxy tohoto sandboxu
+    se na `main` propíše správně, ale nemusí spolehlivě odpálit GitHubí
+    `pages-build-deployment` (workflow `dynamic/pages/pages-build-deployment`, nelze spustit
+    ručně přes workflow_dispatch – vrací 422). Po pushi na `main` proto vždy ověř přes
+    `mcp__github__actions_list` (`list_workflow_runs`, `resource_id` = ID workflow
+    `pages-build-deployment`), že nový run odpovídá aktuálnímu `head_sha` z `main`. Pokud ne,
+    „nudni" build reálným commitem přes GitHub API (`mcp__github__create_or_update_file`,
+    např. no-op update `README.md`) – to build spolehlivě spustí. Sleduj run přes
+    `actions_get` (`get_workflow_run`), dokud `status` není `completed` a `conclusion`
+    `success`, než změnu nahlásíš jako live.
 
 ## Proces: nový zaměstnanec (uživatel pošle fotku + jméno)
 

@@ -29,6 +29,13 @@ scripts/generate_preview.py  generátor index.html
 8. Šířka podpisu 338 px, font Arial, oranžová #F37021 – neměnit.
 9. Po KAŽDÉ změně v `signatures/` přegenerovat `index.html` skriptem a VŠE commitnout a pushnout
    (fotky + podpis + people.csv + index.html v jednom commitu).
+10. **Automatický režim (autorizováno uživatelem):** u požadavků typu „nový zaměstnanec",
+    „odchod zaměstnance" a „změna jména/fotky/týmu" proveď VŠECHNY kroky procesu a rovnou
+    pushni (resp. commitni + mergni/pushni) přímo do `main` – BEZ čekání na potvrzení uživatele.
+    Cílem je, aby změna byla live na GitHub Pages během ~1 minuty od zadání. Toto explicitní
+    svolení se vztahuje na běžný, striktně dle procesu níže provedený zápis. Pokud narazíš na
+    něco mimo proces (neobvyklý vstup, kolize slugu, chybějící fotka, nejasné jméno/tým), i tak
+    se zeptej – automatizace platí pro provedení kroků, ne pro domýšlení nejasného zadání.
 
 ## Proces: nový zaměstnanec (uživatel pošle fotku + jméno)
 

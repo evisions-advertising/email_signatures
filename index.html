@@ -1,0 +1,2831 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Email Signature Preview</title><style>
+body{font-family:Arial,sans-serif;background:#f4f4f4;margin:20px;}
+h1{color:#F37021;} h2{color:#202020;border-bottom:3px solid #F37021;padding-bottom:4px;margin-top:36px;}
+.grid{display:flex;flex-wrap:wrap;gap:16px;}
+.card{background:#fff;border:1px solid #ddd;border-radius:8px;padding:14px;width:380px;box-shadow:0 1px 3px rgba(0,0,0,.08);display:flex;flex-direction:column;gap:12px;}
+.copybtn{align-self:flex-start;background:#F37021;color:#fff;border:none;border-radius:6px;padding:8px 16px;font-size:13px;font-weight:bold;cursor:pointer;font-family:Arial,sans-serif;}
+.copybtn:hover{background:#d95f15;} .copybtn.done{background:#3aa655;}
+</style>
+<script>
+function copySig(btn){
+  var sig = btn.closest('.card').querySelector('.sig');
+  var range = document.createRange();
+  range.selectNodeContents(sig);
+  var sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  var ok = false;
+  try { ok = document.execCommand('copy'); } catch(e) {}
+  sel.removeAllRanges();
+  if (ok) {
+    var orig = btn.textContent;
+    btn.textContent = 'Copied! Paste into Gmail (Ctrl+V)';
+    btn.classList.add('done');
+    setTimeout(function(){ btn.textContent = orig; btn.classList.remove('done'); }, 2500);
+  } else {
+    btn.textContent = 'Copy failed - please select and copy manually';
+  }
+}
+</script>
+</head><body>
+<h1>Email Signatures (58)</h1>
+<h2>AI (2)</h2><div class='grid'>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/dlabajova.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Nikol Dlabajová</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:dlabajova@evisions.cz" style="color: #202020; text-decoration: none;">dlabajova@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/kovalcik.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Jan Kovalčík</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:kovalcik@evisions.cz" style="color: #202020; text-decoration: none;">kovalcik@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+</div>
+<h2>KREA (12)</h2><div class='grid'>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/andryskova.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Jana Andrýsková</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:andryskova@evisions.cz" style="color: #202020; text-decoration: none;">andryskova@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/benda.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Tomáš Benda</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:benda@evisions.cz" style="color: #202020; text-decoration: none;">benda@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/descy.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Veronika Martinec Decsy</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:descy@evisions.cz" style="color: #202020; text-decoration: none;">descy@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/grofova.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Dana Grófová</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:grofova@evisions.cz" style="color: #202020; text-decoration: none;">grofova@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/hasova.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Tereza Hruška Hášová</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:hasova@evisions.cz" style="color: #202020; text-decoration: none;">hasova@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width:338px;">
+    <table cellpadding="0" cellspacing="0" border="0" style="width:338px;border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;color:#202020;">
+      <tr>
+        <td style="padding:0 15px 0 0;vertical-align:top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/bednarova.png" width="120" alt="Profilová fotka" style="border:0;border-radius:50%;display:block;outline:none;text-decoration:none;">
+        </td>
+        <td style="padding:0;vertical-align:top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Jitka Bednářová</strong><br>
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br>
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420731990050" style="color:#202020;text-decoration:none;">+420 731 990 050</a><br>
+            <a href="mailto:bednarova@evisions.cz" style="color:#202020;text-decoration:none;">bednarova@evisions.cz</a><br>
+            <a href="https://www.evisions.cz" style="color:#202020;text-decoration:none;">evisions.cz</a>
+          </div>
+          <br>
+          <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+            <tr>
+              <td style="padding:0 16px 0 0;vertical-align:middle;">
+                <a href="https://www.evisions.cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" height="20" alt="evisions" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+              <td style="padding:0 6px 0 0;vertical-align:middle;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/oE0aJGv.png" width="21" alt="Instagram" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+              <td style="padding:0 6px 0 0;vertical-align:middle;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/52cHgsW.png" width="21" alt="Facebook" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+              <td style="padding:0;vertical-align:middle;">
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/cDYdXrV.png" width="21" alt="LinkedIn" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding:6px 0 0 0;">
+          <img src="https://i.imgur.com/l1UCnKV.png" width="336" height="2" alt="" style="border:0;display:block;outline:none;text-decoration:none;">
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width:338px;">
+    <table cellpadding="0" cellspacing="0" border="0" style="width:338px;border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;color:#202020;">
+      <tr>
+        <td style="padding:0 15px 0 0;vertical-align:top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/broz.png" width="120" alt="Profilová fotka" style="border:0;border-radius:50%;display:block;outline:none;text-decoration:none;">
+        </td>
+        <td style="padding:0;vertical-align:top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Ondřej Brož</strong><br>
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br>
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420775636431" style="color:#202020;text-decoration:none;">+420 775 636 431</a><br>
+            <a href="mailto:broz@evisions.cz" style="color:#202020;text-decoration:none;">broz@evisions.cz</a><br>
+            <a href="https://www.evisions.cz" style="color:#202020;text-decoration:none;">evisions.cz</a>
+          </div>
+          <br>
+          <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+            <tr>
+              <td style="padding:0 16px 0 0;vertical-align:middle;">
+                <a href="https://www.evisions.cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" height="20" alt="evisions" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+              <td style="padding:0 6px 0 0;vertical-align:middle;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/oE0aJGv.png" width="21" alt="Instagram" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+              <td style="padding:0 6px 0 0;vertical-align:middle;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/52cHgsW.png" width="21" alt="Facebook" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+              <td style="padding:0;vertical-align:middle;">
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/cDYdXrV.png" width="21" alt="LinkedIn" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding:6px 0 0 0;">
+          <img src="https://i.imgur.com/l1UCnKV.png" width="336" height="2" alt="" style="border:0;display:block;outline:none;text-decoration:none;">
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+<div style="width:338px;">
+<table cellpadding="0" cellspacing="0" style="width:338px;font-family:Arial,sans-serif;font-size:14px;color:#202020;">
+<tr>
+<td style="padding-right:15px;vertical-align:top;">
+<img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/brzobohata.png" width="120" style="border-radius:50%;display:block;">
+</td>
+<td style="vertical-align:top;">
+<strong style="color:#F37021;font-size:16px;line-height:18px;">Natalie Brzobohatá</strong><br>
+<strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br>
+<div style="margin-top:6px;line-height:16px;">
+<a href="tel:+420608831332" style="color:#202020;text-decoration:none;">+420 608 831 332</a><br>
+<a href="mailto:brzobohata@evisions.cz" style="color:#202020;text-decoration:none;">brzobohata@evisions.cz</a><br>
+<a href="https://www.evisions.cz" style="color:#202020;text-decoration:none;">evisions.cz</a>
+</div><br>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding-right:16px;">
+<a href="https://www.evisions.cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/Na7CmmQ.png" height="20" alt="evisions" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+<td style="padding-right:6px;">
+<a href="https://www.instagram.com/evisions_cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/oE0aJGv.png" width="21" alt="Instagram" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+<td style="padding-right:6px;">
+<a href="https://www.facebook.com/evisions.advertising" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/52cHgsW.png" width="21" alt="Facebook" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+<td>
+<a href="https://www.linkedin.com/company/evisions-cz/" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/cDYdXrV.png" width="21" alt="LinkedIn" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="padding-top:6px;">
+<img src="https://i.imgur.com/l1UCnKV.png" style="width:336px;height:2px;display:block;">
+</td>
+</tr>
+</table>
+</div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+<div style="width:338px;">
+<table cellpadding="0" cellspacing="0" style="width:338px;font-family:Arial,sans-serif;font-size:14px;color:#202020;">
+<tr>
+<td style="padding-right:15px;vertical-align:top;">
+<img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/vajcnerova.png" width="120" style="border-radius:50%;display:block;">
+</td>
+<td style="vertical-align:top;">
+<strong style="color:#F37021;font-size:16px;line-height:18px;">Natálie Vajčnerová</strong><br>
+<strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br>
+<div style="margin-top:6px;line-height:16px;">
+<a href="tel:+420723980419" style="color:#202020;text-decoration:none;">+420 723 980 419</a><br>
+<a href="mailto:vajcnerova@evisions.cz" style="color:#202020;text-decoration:none;">vajcnerova@evisions.cz</a><br>
+<a href="https://www.evisions.cz" style="color:#202020;text-decoration:none;">evisions.cz</a>
+</div><br>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding-right:16px;">
+<a href="https://www.evisions.cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/Na7CmmQ.png" height="20" alt="evisions" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+<td style="padding-right:6px;">
+<a href="https://www.instagram.com/evisions_cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/oE0aJGv.png" width="21" alt="Instagram" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+<td style="padding-right:6px;">
+<a href="https://www.facebook.com/evisions.advertising" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/52cHgsW.png" width="21" alt="Facebook" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+<td>
+<a href="https://www.linkedin.com/company/evisions-cz/" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/cDYdXrV.png" width="21" alt="LinkedIn" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="padding-top:6px;">
+<img src="https://i.imgur.com/l1UCnKV.png" style="width:336px;height:2px;display:block;">
+</td>
+</tr>
+</table>
+</div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width:338px;font-family:Arial,sans-serif;font-size:14px;color:#202020;">
+      <tr>
+        <td style="padding-right:15px;vertical-align:top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/vorlova.png" width="120" style="border-radius:50%;display:block;" alt="Profilová fotka">
+        </td>
+        <td style="vertical-align:top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Tereza Vorlová</strong><br>
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br>
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420731828025" style="color:#202020;text-decoration:none;">+420 731 828 025</a><br>
+            <a href="mailto:vorlova@evisions.cz" style="color:#202020;text-decoration:none;">vorlova@evisions.cz</a><br>
+            <a href="https://www.evisions.cz" style="color:#202020;text-decoration:none;">evisions.cz</a>
+          </div><br>
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right:16px;">
+                <a href="https://www.evisions.cz" style="text-decoration:none;display:inline-block;">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" height="20" alt="evisions">
+                </a>
+              </td>
+              <td style="padding-right:6px;">
+                <a href="https://www.instagram.com/evisions_cz" style="text-decoration:none;display:inline-block;">
+                  <img src="https://i.imgur.com/oE0aJGv.png" width="21" alt="Instagram">
+                </a>
+              </td>
+              <td style="padding-right:6px;">
+                <a href="https://www.facebook.com/evisions.advertising" style="text-decoration:none;display:inline-block;">
+                  <img src="https://i.imgur.com/52cHgsW.png" width="21" alt="Facebook">
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" style="text-decoration:none;display:inline-block;">
+                  <img src="https://i.imgur.com/cDYdXrV.png" width="21" alt="LinkedIn">
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top:6px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" style="width:336px;height:2px;display:block;" alt="linka">
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/hruba.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Vendula Hrubá</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:hruba@evisions.cz" style="color: #202020; text-decoration: none;">hruba@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/nemec.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Filip Němec</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:nemec@evisions.cz" style="color: #202020; text-decoration: none;">nemec@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+</div>
+<h2>Management (10)</h2><div class='grid'>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/forst.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Marek Foršt</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:forst@evisions.cz" style="color: #202020; text-decoration: none;">forst@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/hlavac.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Petr Hlaváč</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:hlavac@evisions.cz" style="color: #202020; text-decoration: none;">hlavac@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/hortova.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Tereza Hortová</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:hortova@evisions.cz" style="color: #202020; text-decoration: none;">hortova@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/lukasova.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Dominika Lukášová</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:lukasova@evisions.cz" style="color: #202020; text-decoration: none;">lukasova@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/nova.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Hedvika Nová</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:nova@evisions.cz" style="color: #202020; text-decoration: none;">nova@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/novosadova.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Nikola Novosadová</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:novosadova@evisions.cz" style="color: #202020; text-decoration: none;">novosadova@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/sabolova.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Martina Sabolová</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:sabolova@evisions.cz" style="color: #202020; text-decoration: none;">sabolova@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/teuschel.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Roman Teuschel</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:teuschel@evisions.cz" style="color: #202020; text-decoration: none;">teuschel@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/magyar.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Daniela Magyar</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:magyar@evisions.cz" style="color: #202020; text-decoration: none;">magyar@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+<div style="width:338px;">
+<table cellpadding="0" cellspacing="0" style="width:338px;font-family:Arial,sans-serif;font-size:14px;color:#202020;">
+<tr>
+<td style="padding-right:15px;vertical-align:top;">
+<img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/mocek.png" width="120" style="border-radius:50%;display:block;">
+</td>
+<td style="vertical-align:top;">
+<strong style="color:#F37021;font-size:16px;line-height:18px;">Tomáš Mocek</strong><br>
+<strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br>
+<div style="margin-top:6px;line-height:16px;">
+<a href="tel:+420731960338" style="color:#202020;text-decoration:none;">+420 731 960 338</a><br>
+<a href="mailto:mocek@evisions.cz" style="color:#202020;text-decoration:none;">mocek@evisions.cz</a><br>
+<a href="https://www.evisions.cz" style="color:#202020;text-decoration:none;">evisions.cz</a>
+</div><br>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding-right:16px;">
+<a href="https://www.evisions.cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/Na7CmmQ.png" height="20" alt="evisions" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+<td style="padding-right:6px;">
+<a href="https://www.instagram.com/evisions_cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/oE0aJGv.png" width="21" alt="Instagram" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+<td style="padding-right:6px;">
+<a href="https://www.facebook.com/evisions.advertising" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/52cHgsW.png" width="21" alt="Facebook" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+<td>
+<a href="https://www.linkedin.com/company/evisions-cz/" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/cDYdXrV.png" width="21" alt="LinkedIn" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="padding-top:6px;">
+<img src="https://i.imgur.com/l1UCnKV.png" style="width:336px;height:2px;display:block;">
+</td>
+</tr>
+</table>
+</div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+</div>
+<h2>Office (2)</h2><div class='grid'>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/zajicova.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Anežka Zajícová</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:zajicova@evisions.cz" style="color: #202020; text-decoration: none;">zajicova@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+<div style="width:338px;">
+<table cellpadding="0" cellspacing="0" style="width:338px;font-family:Arial,sans-serif;font-size:14px;color:#202020;">
+<tr>
+<td style="padding-right:15px;vertical-align:top;">
+<img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/krovicka.png" width="120" style="border-radius:50%;display:block;">
+</td>
+<td style="vertical-align:top;">
+<strong style="color:#F37021;font-size:16px;line-height:18px;">Katarína Krovická</strong><br>
+<strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br>
+<div style="margin-top:6px;line-height:16px;">
+<a href="tel:+420771517889" style="color:#202020;text-decoration:none;">+420 771 517 889</a><br>
+<a href="mailto:krovicka@evisions.cz" style="color:#202020;text-decoration:none;">krovicka@evisions.cz</a><br>
+<a href="https://www.evisions.cz" style="color:#202020;text-decoration:none;">evisions.cz</a>
+</div><br>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding-right:16px;">
+<a href="https://www.evisions.cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/Na7CmmQ.png" height="20" alt="evisions" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+<td style="padding-right:6px;">
+<a href="https://www.instagram.com/evisions_cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/oE0aJGv.png" width="21" alt="Instagram" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+<td style="padding-right:6px;">
+<a href="https://www.facebook.com/evisions.advertising" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/52cHgsW.png" width="21" alt="Facebook" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+<td>
+<a href="https://www.linkedin.com/company/evisions-cz/" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/cDYdXrV.png" width="21" alt="LinkedIn" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="padding-top:6px;">
+<img src="https://i.imgur.com/l1UCnKV.png" style="width:336px;height:2px;display:block;">
+</td>
+</tr>
+</table>
+</div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+</div>
+<h2>PPC (9)</h2><div class='grid'>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/basusova.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Kristýna Bašusová</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:basusova@evisions.cz" style="color: #202020; text-decoration: none;">basusova@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/boumova.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Monika Boumová</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:boumova@evisions.cz" style="color: #202020; text-decoration: none;">boumova@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/cepelkova.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Lucie Čepelková</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:cepelkova@evisions.cz" style="color: #202020; text-decoration: none;">cepelkova@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/janousek.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Václav Janoušek</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:janousek@evisions.cz" style="color: #202020; text-decoration: none;">janousek@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/machala.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Petr Machala</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:machala@evisions.cz" style="color: #202020; text-decoration: none;">machala@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/pittnerova.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Lenka Pittnerová</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:pittnerova@evisions.cz" style="color: #202020; text-decoration: none;">pittnerova@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/sikora.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Martin Sikora</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:sikora@evisions.cz" style="color: #202020; text-decoration: none;">sikora@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/safranek.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Štěpán Šafránek</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:safranek@evisions.cz" style="color: #202020; text-decoration: none;">safranek@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+<div style="width:338px;">
+<table cellpadding="0" cellspacing="0" style="width:338px;font-family:Arial,sans-serif;font-size:14px;color:#202020;">
+<tr>
+<td style="padding-right:15px;vertical-align:top;">
+<img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/polakovicova.png" width="120" style="border-radius:50%;display:block;" alt="Profilová fotka">
+</td>
+<td style="vertical-align:top;">
+<strong style="color:#F37021;font-size:16px;line-height:18px;">Ludmila Polakovičová</strong><br>
+<strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br>
+<div style="margin-top:6px;line-height:16px;">
+<a href="tel:+420725782640" style="color:#202020;text-decoration:none;">+420 725 782 640</a><br>
+<a href="mailto:polakovicova@evisions.cz" style="color:#202020;text-decoration:none;">polakovicova@evisions.cz</a><br>
+<a href="https://www.evisions.cz" style="color:#202020;text-decoration:none;">evisions.cz</a>
+</div><br>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding-right:16px;"><a href="https://www.evisions.cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/Na7CmmQ.png" height="20" alt="evisions" style="border:0;display:block;outline:none;text-decoration:none;"></a></td>
+<td style="padding-right:6px;"><a href="https://www.instagram.com/evisions_cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/oE0aJGv.png" width="21" alt="Instagram" style="border:0;display:block;outline:none;text-decoration:none;"></a></td>
+<td style="padding-right:6px;"><a href="https://www.facebook.com/evisions.advertising" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/52cHgsW.png" width="21" alt="Facebook" style="border:0;display:block;outline:none;text-decoration:none;"></a></td>
+<td><a href="https://www.linkedin.com/company/evisions-cz/" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/cDYdXrV.png" width="21" alt="LinkedIn" style="border:0;display:block;outline:none;text-decoration:none;"></a></td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="padding-top:6px;">
+<img src="https://i.imgur.com/l1UCnKV.png" style="width:336px;height:2px;display:block;">
+</td>
+</tr>
+</table>
+</div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+</div>
+<h2>SCS (2)</h2><div class='grid'>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/doskocil.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Michal Doskočil</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:doskocil@evisions.cz" style="color: #202020; text-decoration: none;">doskocil@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width:338px;">
+    <table cellpadding="0" cellspacing="0" border="0" style="width:338px;border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;color:#202020;">
+      <tr>
+        <td style="padding:0 15px 0 0;vertical-align:top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/mondek.png" width="120" alt="Profilová fotka" style="border:0;border-radius:50%;display:block;outline:none;text-decoration:none;">
+        </td>
+        <td style="padding:0;vertical-align:top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Matěj Mondek</strong><br>
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br>
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420777988460" style="color:#202020;text-decoration:none;">+420 777 988 460</a><br>
+            <a href="mailto:mondek@evisions.cz" style="color:#202020;text-decoration:none;">mondek@evisions.cz</a><br>
+            <a href="https://www.evisions.cz" style="color:#202020;text-decoration:none;">evisions.cz</a>
+          </div>
+          <br>
+          <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+            <tr>
+              <td style="padding:0 16px 0 0;vertical-align:middle;">
+                <a href="https://www.evisions.cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" height="20" alt="evisions" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+              <td style="padding:0 6px 0 0;vertical-align:middle;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/oE0aJGv.png" width="21" alt="Instagram" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+              <td style="padding:0 6px 0 0;vertical-align:middle;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/52cHgsW.png" width="21" alt="Facebook" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+              <td style="padding:0;vertical-align:middle;">
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/cDYdXrV.png" width="21" alt="LinkedIn" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding:6px 0 0 0;">
+          <img src="https://i.imgur.com/l1UCnKV.png" width="336" height="2" alt="" style="border:0;display:block;outline:none;text-decoration:none;">
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+</div>
+<h2>SEO (19)</h2><div class='grid'>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/damasek.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Oliver Damašek</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:damasek@evisions.cz" style="color: #202020; text-decoration: none;">damasek@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/dubravsky.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Fedor Dúbravský</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:dubravsky@evisions.cz" style="color: #202020; text-decoration: none;">dubravsky@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/chaloupkova.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Klára Chaloupková</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:chaloupkova@evisions.cz" style="color: #202020; text-decoration: none;">chaloupkova@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/jezo.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Veronika Ježo</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:jezo@evisions.cz" style="color: #202020; text-decoration: none;">jezo@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank" style="text-decoration: none !important; border: none !important; outline: none !important; display: inline-block;">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/krizova.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Pavla Křížová</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:krizova@evisions.cz" style="color: #202020; text-decoration: none;">krizova@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/kutarska.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Alicja Kutarska</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:kutarska@evisions.cz" style="color: #202020; text-decoration: none;">kutarska@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/maksimava.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Darya Maksimava</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:maksimava@evisions.cz" style="color: #202020; text-decoration: none;">maksimava@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/martinec.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Patrik Martinec</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:martinec@evisions.cz" style="color: #202020; text-decoration: none;">martinec@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/matas.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Daniel Maťaš</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:matas@evisions.cz" style="color: #202020; text-decoration: none;">matas@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/muller.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Sina Müller</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:muller@evisions.cz" style="color: #202020; text-decoration: none;">muller@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/novy.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Marek Nový</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:novy@evisions.cz" style="color: #202020; text-decoration: none;">novy@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/orgovan.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Viktor Orgován</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:orgovan@evisions.cz" style="color: #202020; text-decoration: none;">orgovan@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/paleckova.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Zuzana Palečková</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:paleckova@evisions.cz" style="color: #202020; text-decoration: none;">paleckova@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/rogers.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Jack Rogers</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:rogers@evisions.cz" style="color: #202020; text-decoration: none;">rogers@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+<div style="width:338px;">
+<table cellpadding="0" cellspacing="0" style="width:338px;font-family:Arial,sans-serif;font-size:14px;color:#202020;">
+<tr>
+<td style="padding-right:15px;vertical-align:top;">
+<img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/hnizdilova.png" width="120" style="border-radius:50%;display:block;" alt="Profilová fotka">
+</td>
+<td style="vertical-align:top;">
+<strong style="color:#F37021;font-size:16px;line-height:18px;">Jana Hnízdilová</strong><br>
+<strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br>
+<div style="margin-top:6px;line-height:16px;">
+<a href="tel:+420776041365" style="color:#202020;text-decoration:none;">+420 776 041 365</a><br>
+<a href="mailto:hnizdilova@evisions.cz" style="color:#202020;text-decoration:none;">hnizdilova@evisions.cz</a><br>
+<a href="https://www.evisions.cz" style="color:#202020;text-decoration:none;">evisions.cz</a>
+</div><br>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding-right:16px;">
+<a href="https://www.evisions.cz" style="text-decoration:none;display:inline-block;">
+<img src="https://i.imgur.com/Na7CmmQ.png" height="20">
+</a>
+</td>
+<td style="padding-right:6px;">
+<a href="https://www.instagram.com/evisions_cz" style="text-decoration:none;display:inline-block;">
+<img src="https://i.imgur.com/oE0aJGv.png" width="21">
+</a>
+</td>
+<td style="padding-right:6px;">
+<a href="https://www.facebook.com/evisions.advertising" style="text-decoration:none;display:inline-block;">
+<img src="https://i.imgur.com/52cHgsW.png" width="21">
+</a>
+</td>
+<td>
+<a href="https://www.linkedin.com/company/evisions-cz/" style="text-decoration:none;display:inline-block;">
+<img src="https://i.imgur.com/cDYdXrV.png" width="21">
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td colspan="2" style="padding-top:6px;">
+<img src="https://i.imgur.com/l1UCnKV.png" style="width:336px;height:2px;display:block;">
+</td>
+</tr>
+</table>
+</div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width:338px;font-family:Arial,sans-serif;font-size:14px;color:#202020;">
+      <tr>
+        <td style="padding-right:15px;vertical-align:top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/kosar.png" width="120" style="border-radius:50%;display:block;" alt="Profilová fotka">
+        </td>
+        <td style="vertical-align:top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Ecem Duygu Kosar</strong><br>
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br>
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+491636968270" style="color:#202020;text-decoration:none;">+49 163 696 8270</a><br>
+            <a href="mailto:kosar@evisions.cz" style="color:#202020;text-decoration:none;">kosar@evisions.cz</a><br>
+            <a href="https://www.evisions.cz" style="color:#202020;text-decoration:none;">evisions.cz</a>
+          </div><br>
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right:16px;">
+                <a href="https://www.evisions.cz" style="text-decoration:none;display:inline-block;">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" height="20" alt="evisions">
+                </a>
+              </td>
+              <td style="padding-right:6px;">
+                <a href="https://www.instagram.com/evisions_cz" style="text-decoration:none;display:inline-block;">
+                  <img src="https://i.imgur.com/oE0aJGv.png" width="21" alt="Instagram">
+                </a>
+              </td>
+              <td style="padding-right:6px;">
+                <a href="https://www.facebook.com/evisions.advertising" style="text-decoration:none;display:inline-block;">
+                  <img src="https://i.imgur.com/52cHgsW.png" width="21" alt="Facebook">
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" style="text-decoration:none;display:inline-block;">
+                  <img src="https://i.imgur.com/cDYdXrV.png" width="21" alt="LinkedIn">
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top:6px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" style="width:336px;height:2px;display:block;" alt="linka">
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+<div style="width:338px;">
+<table cellpadding="0" cellspacing="0" style="width:338px;font-family:Arial,sans-serif;font-size:14px;color:#202020;">
+<tr>
+<td style="padding-right:15px;vertical-align:top;"><img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/bartko.png" width="120" style="border-radius:50%;display:block;"></td>
+<td style="vertical-align:top;">
+<strong style="color:#F37021;font-size:16px;line-height:18px;">Martin Bartko</strong><br>
+<strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br>
+<div style="margin-top:6px;line-height:16px;">
+<a href="tel:+421907494545" style="color:#202020;text-decoration:none;">+421 907 494 545</a><br>
+<a href="mailto:bartko@evisions.cz" style="color:#202020;text-decoration:none;">bartko@evisions.cz</a><br>
+<a href="https://www.evisions.cz" style="color:#202020;text-decoration:none;">evisions.cz</a>
+</div><br>
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td style="padding-right:16px;">
+<a href="https://www.evisions.cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/Na7CmmQ.png" height="20" alt="evisions" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+<td style="padding-right:6px;">
+<a href="https://www.instagram.com/evisions_cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/oE0aJGv.png" width="21" alt="Instagram" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+<td style="padding-right:6px;">
+<a href="https://www.facebook.com/evisions.advertising" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/52cHgsW.png" width="21" alt="Facebook" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+<td>
+<a href="https://www.linkedin.com/company/evisions-cz/" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;"><img src="https://i.imgur.com/cDYdXrV.png" width="21" alt="LinkedIn" style="border:0;display:block;outline:none;text-decoration:none;"></a>
+</td>
+</tr>
+</table>
+</td></tr>
+<tr><td colspan="2" style="padding-top:6px;"><img src="https://i.imgur.com/l1UCnKV.png" style="width:336px;height:2px;display:block;"></td></tr>
+</table></div></div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width:338px;">
+    <table cellpadding="0" cellspacing="0" border="0" style="width:338px;border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;color:#202020;">
+      <tr>
+        <td style="padding:0 15px 0 0;vertical-align:top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/meinert.png" width="120" alt="Profilová fotka" style="border:0;border-radius:50%;display:block;outline:none;text-decoration:none;">
+        </td>
+        <td style="padding:0;vertical-align:top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Adrian Meinert</strong><br>
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br>
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420777795598" style="color:#202020;text-decoration:none;">+420 777 795 598</a><br>
+            <a href="mailto:meinert@evisions.cz" style="color:#202020;text-decoration:none;">meinert@evisions.cz</a><br>
+            <a href="https://www.evisions.cz" style="color:#202020;text-decoration:none;">evisions.cz</a>
+          </div>
+          <br>
+          <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+            <tr>
+              <td style="padding:0 16px 0 0;vertical-align:middle;">
+                <a href="https://www.evisions.cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" height="20" alt="evisions" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+              <td style="padding:0 6px 0 0;vertical-align:middle;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/oE0aJGv.png" width="21" alt="Instagram" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+              <td style="padding:0 6px 0 0;vertical-align:middle;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/52cHgsW.png" width="21" alt="Facebook" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+              <td style="padding:0;vertical-align:middle;">
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/cDYdXrV.png" width="21" alt="LinkedIn" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding:6px 0 0 0;">
+          <img src="https://i.imgur.com/l1UCnKV.png" width="336" height="2" alt="" style="border:0;display:block;outline:none;text-decoration:none;">
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width:338px;">
+    <table cellpadding="0" cellspacing="0" border="0" style="width:338px;border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;color:#202020;">
+      <tr>
+        <td style="padding:0 15px 0 0;vertical-align:top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/richterova.png" width="120" alt="Profilová fotka" style="border:0;border-radius:50%;display:block;outline:none;text-decoration:none;">
+        </td>
+        <td style="padding:0;vertical-align:top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Ema Richterová</strong><br>
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br>
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420737581272" style="color:#202020;text-decoration:none;">+420 737 581 272</a><br>
+            <a href="mailto:richterova@evisions.cz" style="color:#202020;text-decoration:none;">richterova@evisions.cz</a><br>
+            <a href="https://www.evisions.cz" style="color:#202020;text-decoration:none;">evisions.cz</a>
+          </div>
+          <br>
+          <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+            <tr>
+              <td style="padding:0 16px 0 0;vertical-align:middle;">
+                <a href="https://www.evisions.cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" height="20" alt="evisions" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+              <td style="padding:0 6px 0 0;vertical-align:middle;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/oE0aJGv.png" width="21" alt="Instagram" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+              <td style="padding:0 6px 0 0;vertical-align:middle;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/52cHgsW.png" width="21" alt="Facebook" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+              <td style="padding:0;vertical-align:middle;">
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/cDYdXrV.png" width="21" alt="LinkedIn" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding:6px 0 0 0;">
+          <img src="https://i.imgur.com/l1UCnKV.png" width="336" height="2" alt="" style="border:0;display:block;outline:none;text-decoration:none;">
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+</div>
+<h2>UX (2)</h2><div class='grid'>
+<div class='card'><div class='sig'>
+  <div style="width: 338px;">
+    <table cellpadding="0" cellspacing="0" style="width: 338px; font-family: Arial, sans-serif; font-size: 14px; color: #202020;">
+      <tr>
+        <td style="padding-right: 15px; vertical-align: top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/zimmerman.png" alt="Profilová fotka" width="120" style="border-radius: 50%; display: block;" />
+        </td>
+        <td style="vertical-align: top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Peter Zimmerman</strong><br />
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br />
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420000000000" style="color: #202020; text-decoration: none;">+420 000 000 000</a><br />
+            <a href="mailto:zimmerman@evisions.cz" style="color: #202020; text-decoration: none;">zimmerman@evisions.cz</a><br />
+            <a href="https://www.evisions.cz" style="color: #202020; text-decoration: none;">evisions.cz</a><br />
+          </div><br />
+          <table cellpadding="0" cellspacing="0">
+            <tr>
+              <td style="padding-right: 16px;">
+                <a href="https://www.evisions.cz" target="_blank">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" alt="evisions logo" height="20" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank">
+                  <img src="https://i.imgur.com/oE0aJGv.png" alt="Instagram" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td style="padding-right: 6px;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank">
+                  <img src="https://i.imgur.com/52cHgsW.png" alt="Facebook" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+              <td>
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank">
+                  <img src="https://i.imgur.com/cDYdXrV.png" alt="LinkedIn" width="21" style="border: none; vertical-align: middle;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding-top: 10px;">
+          <img src="https://i.imgur.com/l1UCnKV.png" alt="Linka" style="width: 336px; height: 2px; display: block;" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+<div class='card'><div class='sig'>
+  <div style="width:338px;">
+    <table cellpadding="0" cellspacing="0" border="0" style="width:338px;border-collapse:collapse;font-family:Arial,sans-serif;font-size:14px;color:#202020;">
+      <tr>
+        <td style="padding:0 15px 0 0;vertical-align:top;">
+          <img src="https://raw.githubusercontent.com/evisions-advertising/email_signatures/main/photos/chovancova.png" width="120" alt="Profilová fotka" style="border:0;border-radius:50%;display:block;outline:none;text-decoration:none;">
+        </td>
+        <td style="padding:0;vertical-align:top;">
+          <strong style="color:#F37021;font-size:16px;line-height:18px;">Veronika Chovancová</strong><br>
+          <strong style="color:#202020;font-size:14px;line-height:16px;">Job Title</strong><br>
+          <div style="margin-top:6px;line-height:16px;">
+            <a href="tel:+420774126112" style="color:#202020;text-decoration:none;">+420 774 126 112</a><br>
+            <a href="mailto:chovancova@evisions.cz" style="color:#202020;text-decoration:none;">chovancova@evisions.cz</a><br>
+            <a href="https://www.evisions.cz" style="color:#202020;text-decoration:none;">evisions.cz</a>
+          </div>
+          <br>
+          <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+            <tr>
+              <td style="padding:0 16px 0 0;vertical-align:middle;">
+                <a href="https://www.evisions.cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/Na7CmmQ.png" height="20" alt="evisions" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+              <td style="padding:0 6px 0 0;vertical-align:middle;">
+                <a href="https://www.instagram.com/evisions_cz" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/oE0aJGv.png" width="21" alt="Instagram" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+              <td style="padding:0 6px 0 0;vertical-align:middle;">
+                <a href="https://www.facebook.com/evisions.advertising" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/52cHgsW.png" width="21" alt="Facebook" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+              <td style="padding:0;vertical-align:middle;">
+                <a href="https://www.linkedin.com/company/evisions-cz/" target="_blank" style="border:0;display:block;outline:none;text-decoration:none;">
+                  <img src="https://i.imgur.com/cDYdXrV.png" width="21" alt="LinkedIn" style="border:0;display:block;outline:none;text-decoration:none;">
+                </a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="padding:6px 0 0 0;">
+          <img src="https://i.imgur.com/l1UCnKV.png" width="336" height="2" alt="" style="border:0;display:block;outline:none;text-decoration:none;">
+        </td>
+      </tr>
+    </table>
+  </div>
+</div><button class='copybtn' onclick='copySig(this)'>Copy signature</button></div>
+</div>
+</body></html>
